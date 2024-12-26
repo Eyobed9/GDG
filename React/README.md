@@ -10,6 +10,7 @@ This is a simple React project demonstrating state, props, a counter, and a card
   - [Counter](#counter)
   - [Card](#card)
 - [Contributing](#contributing)
+- [Vercel deployment link](#deployment)
 
 ## Installation
 
@@ -48,4 +49,6 @@ The `Card` component displays user information including name, email, and age. T
 
 Contributions are welcome! Please open an issue or submit a pull request for any changes.
 
+## Vercel deployment link
 
+https://state-props-el3z75c19-eyobed9s-projects.vercel.app/
