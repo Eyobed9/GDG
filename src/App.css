@@ -1,0 +1,63 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* @keyframes fade {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+} */
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.create {
+  width: 300px;
+  height: 100px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.note {
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+.remove {
+  display: none;
+  /* animation: fade 3s ease-out; */
+}
+
+.space {
+  margin-left: 10px;
+}
+
+.space:hover {
+  cursor: pointer;
+}
+
+
+
