@@ -5,23 +5,10 @@
   text-align: center;
 }
 
-/* @keyframes fade {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0.5;
-  }
-
-  100% {
-    opacity: 0;
-  }
-} */
-
 .container {
   display: flex;
   justify-content: space-around;
+  margin-left: 50px;
 }
 
 .container1 {
@@ -35,13 +22,31 @@
   height: 100px;
 }
 
+#description2 {
+  width: 195px;
+}
+
+.displayTasksContainer, .tasksContainer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.displayTasksContainer {
+  display: flex;
+  /* flex-direction: column; */
+  width: 200px;
+  height: auto;
+}
+
 form {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.note {
+.taskTitle {
   padding: 10px;
   border-bottom: 1px solid white;
 }
@@ -51,13 +56,30 @@ form {
   /* animation: fade 3s ease-out; */
 }
 
+#Save {
+  display: inline;
+}
+
 .space {
-  margin-left: 10px;
+  display: inline;
+  margin: 15px;
 }
 
 .space:hover {
   cursor: pointer;
 }
+
+.taskContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.tasksContainer {
+  gap: 15px;
+}
+
 
 
 
