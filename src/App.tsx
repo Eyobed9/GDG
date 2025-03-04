@@ -13,13 +13,13 @@ function App() {
 				<Link className="links" to="/">Home</Link>
 				<Link className="links" to="/contact">Contact</Link>
 				<Link className="links" to="/about">About</Link>
-				<Link className="links" to="/profile">Profile</Link>
+				<Link className="links" to="/profile/1">Profile</Link>
 			</nav>
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/About" element={<About />} />
 				<Route path="/Contact" element={<Contact />} />
-				<Route path="/Profile" element={<UserProfile/>} />
+				<Route path="/Profile/:id" element={<UserProfile/>} />
         		<Route path="*" element={<NotFound/>}/>
 			</Routes>
 		</>
