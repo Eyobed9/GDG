@@ -1,7 +1,10 @@
 import { useParams } from "react-router-dom";
+import useAuth  from "../Hooks/useAuth";
 
 const UserProfile = () => {
-	const {id} = useParams();
+	const { loggedIn } = useAuth();
+	const { id } = useParams();
+
 	const user = {
 		name: "John Doe",
 		email: "john.doe@example.com",
@@ -10,10 +13,12 @@ const UserProfile = () => {
 
 	return (
 		<div>
-			<h1>{user.name}</h1>
+			<h2>{loggedIn ? `Welcome, ${user.name}`: "Please login to view your profile"}</h2>
+			{loggedIn && 
+			<><br/><h3>{user.name}</h3>
 			<p>ID: {id}</p>
 			<p>Email: {user.email}</p>
-			<p>Bio: {user.bio}</p>
+			<p>Bio: {user.bio}</p></>}
 		</div>
 	);
 };

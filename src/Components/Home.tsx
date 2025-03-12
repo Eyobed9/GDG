@@ -5,11 +5,12 @@ export const Home = () => {
 	const welcomeMessage = "Welcome to our website!";
 
 	return (
-		<>
+		<div>
 			<h1>{welcomeMessage}</h1>
-			<button id="contactBtn" onClick={() => navigate("/contact")}>
+			<p className="mb-2">This is a website made for GDG project.</p>
+			<button className="p-1.5 bg-blue-600 rounded-md text-white" onClick={() => navigate("/contact")}>
 				Contact us
 			</button>
-		</>
+		</div>
 	);
 };
