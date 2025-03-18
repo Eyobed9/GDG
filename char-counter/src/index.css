@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "tailwindcss";
+
+@layer base {
+	body {
+		@apply font-sans antialiased; 
+	}
+
+	button {
+		@apply border-solid;
+		cursor: pointer;
+	}
+
+	button:hover, .links:hover {
+		@apply text-blue-600;
+	}
+
+	h1 {
+		@apply text-xl mb-3 text-blue-600;
+	}
+
+	h2 {
+		@apply text-lg mb-2 text-blue-600;
+	}
+}
