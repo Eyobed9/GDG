@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "tailwindcss";
+
+@layer base {
+	body {
+		@apply font-sans antialiased; 
+	}
+
+	button {
+		@apply border-solid;
+		cursor: pointer;
+	}
+
+	button:hover, .links:hover {
+		@apply text-yellow-400;
+	}
+
+	h1 {
+		@apply text-3xl mb-3 text-yellow-400 uppercase;
+	}
+
+	h2, h3 {
+		@apply text-lg mb-2 text-yellow-400 font-bold;
+	}
+}
